@@ -10,7 +10,7 @@ osx_app_path() {
       a ) app_name="$OPTARG" ;;
       b ) bundle_id="$OPTARG" ;;
       h ) echo "$usage"; return 0 ;;
-      ? ) echo "$usage"; return 1 ;;
+      ? ) echo "$usage" >&2; return 1 ;;
     esac
   done
 
