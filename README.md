@@ -10,7 +10,7 @@ Applescript code based on an answer found in Stack Exchange:
 
 # Installation
 
-Source the script, copy it to your functions script, or run the script directly.
+Source the script, copy it to your functions file, or run it directly. Your choice!
 
 If sourced, the `osx_app_path` function will become available.
 
