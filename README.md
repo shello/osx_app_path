@@ -14,10 +14,18 @@ Source the script, copy it to your functions script, or run the script directly.
 
 If sourced, the `osx_app_path` function will become available.
 
-# Example
+# Usage / Example
 
     $ osx_app_path Preview
     /Applications/Preview.app
     
     $ osx_app_path -b com.apple.preview
     /Applications/Preview.app
+
+The `-a` switch is optional. If a bundle identifier (via `-b`) is given, it
+takes precedence over any `-a`. If multiple options are given, only the last one
+will be used.
+
+# Notes
+
+Tested on OS X 10.9.5, using Bash 3.2 and Zsh 5.0.7.
