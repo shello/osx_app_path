@@ -8,6 +8,12 @@ greater than zero if an error is encountered.
 Applescript code based on an answer found in Stack Exchange:
 "[AppleScript -Get the path to an application without opening it](http://apple.stackexchange.com/a/132394)".
 
+# Installation
+
+Source the script, copy it to your functions script, or run the script directly.
+
+If sourced, the `osx_app_path` function will become available.
+
 # Example
 
     $ osx_app_path Preview
@@ -15,4 +21,3 @@ Applescript code based on an answer found in Stack Exchange:
     
     $ osx_app_path -b com.apple.preview
     /Applications/Preview.app
-
