@@ -1,6 +1,6 @@
 # `osx_app_path.sh`
 
-Get the path of an application bundle in OS X.
+Function to get the path of an application bundle in OS X.
 
 This function *won't launch* the application, and will return an exit exit code
 greater than zero if an error is encountered.
