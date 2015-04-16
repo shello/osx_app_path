@@ -1,5 +1,5 @@
-# Get the path of an application bundle
-# Based on http://apple.stackexchange.com/a/132394
+#!/usr/bin/env bash
+
 osx_app_path() {
   local usage app_name bundle_id app_path exitcode
  
@@ -42,8 +42,7 @@ osx_app_path() {
   return $exitcode
 }
 
-# Examples:
-#   $ osx_app_path Preview
-#   /Applications/Preview.app
-#   $ osx_app_path -b com.apple.preview
-#   /Applications/Preview.app
+# Run if not being sourced
+if [[ "$BASH_SOURCE" == "$0" ]]; then
+  osx_app_path $@
+fi
