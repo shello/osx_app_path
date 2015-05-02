@@ -44,5 +44,5 @@ osx_app_path() {
 
 # Run if not being sourced
 if [[ "$BASH_SOURCE" == "$0" ]]; then
-  osx_app_path $@
+  osx_app_path "$@"
 fi
